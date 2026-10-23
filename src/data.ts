@@ -4,7 +4,7 @@ export const TRANSLATIONS: Record<'EN' | 'VI', TranslationDict> = {
   EN: {
     navbar: {
       about: "About",
-      price: "Services & Rates",
+      price: "Skills",
       projects: "Showcase",
       contact: "Inquiry",
     },
@@ -30,7 +30,7 @@ export const TRANSLATIONS: Record<'EN' | 'VI', TranslationDict> = {
   VI: {
     navbar: {
       about: "Giới thiệu",
-      price: "Dịch vụ & Biểu giá",
+      price: "Kỹ năng",
       projects: "Dự án",
       contact: "Liên hệ",
     },
