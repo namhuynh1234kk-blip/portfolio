@@ -148,7 +148,7 @@ export const PROJECTS: ProjectItem[] = [
     col1Image1: "https://i.postimg.cc/0NsmYyJL/image.png",
     col1Image2: "https://i.postimg.cc/TYKrGS6z/image.png",
     col2Image: "https://i.postimg.cc/QdPYh5w9/image.png",
-    link: "https://ais-dev-3ovjj4v7x2vnbgpfgtvxg4-501835782994.asia-east1.run.app",
+    link: "https://m-y-t-nh-fx-580-vn-x-simulator-scan-ai-1021144332335.us-west1.run.app/",
   },
 ];
 
