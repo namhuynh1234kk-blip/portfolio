@@ -122,7 +122,7 @@ export const PROJECTS: ProjectItem[] = [
       VI: "Webstie nghe nhạc trực tuyến",
     },
     col1Image1: "https://i.postimg.cc/28PzVnxy/Kham-pha.png",
-    col1Image2: "https://i.postimg.cc/DzTYNz7R/room.png",
+    col1Image2: "https://i.postimg.cc/SQJdhn3r/Screenshot-2026-10-23-144344.png",
     col2Image: "https://i.postimg.cc/PrLXXSY4/Screenshot-2026-06-10-110958.png",
     link: "https://melody-ehdi.onrender.com/",
   },
