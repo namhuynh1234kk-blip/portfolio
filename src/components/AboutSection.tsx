@@ -2,6 +2,10 @@ import React from 'react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data';
 import { FadeIn, AnimatedText, ContactButton } from './Reusable';
+import microchipImg from '../assets/images/microchip_cpu_1781065100601.png';
+import ethernetImg from '../assets/images/ethernet_port_1781065131510.png';
+import terminalImg from '../assets/images/terminal_window_1781065145020.png';
+import serverImg from '../assets/images/server_module_1781065116543.png';
 
 interface AboutSectionProps {
   language: Language;
@@ -10,6 +14,10 @@ interface AboutSectionProps {
 
 export const AboutSection: React.FC<AboutSectionProps> = ({ language, onContactClick }) => {
   const t = TRANSLATIONS[language];
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    (e.currentTarget as HTMLElement).style.display = 'none';
+  };
 
   return (
     <section id="about" className="relative min-h-screen w-full flex flex-col justify-center items-center py-20 px-5 sm:px-8 md:px-10 bg-[#0C0C0C] overflow-hidden select-none">
@@ -20,9 +28,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ language, onContactC
       <div className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] z-10">
         <FadeIn delay={0.1} x={-80} y={0} duration={0.9} className="pointer-events-none">
           <img
-            src="/src/assets/images/microchip_cpu_1781065100601.png"
+            src={microchipImg}
             alt="Gold Hardware Microchip CPU 3D"
             referrerPolicy="no-referrer"
+            onError={handleImageError}
             className="w-[120px] sm:w-[160px] md:w-[210px] h-auto object-contain drop-shadow-[0_10px_30px_rgba(182,0,168,0.25)] animate-soft-float"
           />
         </FadeIn>
@@ -32,9 +41,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ language, onContactC
       <div className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] z-10">
         <FadeIn delay={0.25} x={-80} y={0} duration={0.9} className="pointer-events-none">
           <img
-            src="/src/assets/images/ethernet_port_1781065131510.png"
+            src={ethernetImg}
             alt="Ethernet RJ45 Connector glowing 3D"
             referrerPolicy="no-referrer"
+            onError={handleImageError}
             className="w-[100px] sm:w-[140px] md:w-[180px] h-auto object-contain drop-shadow-[0_10px_30px_rgba(0,220,255,0.25)]"
           />
         </FadeIn>
@@ -44,9 +54,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ language, onContactC
       <div className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] z-10">
         <FadeIn delay={0.15} x={80} y={0} duration={0.9} className="pointer-events-none">
           <img
-            src="/src/assets/images/terminal_window_1781065145020.png"
+            src={terminalImg}
             alt="Cyber Linter Software Terminal 3D"
             referrerPolicy="no-referrer"
+            onError={handleImageError}
             className="w-[120px] sm:w-[160px] md:w-[210px] h-auto object-contain drop-shadow-[0_10px_30px_rgba(118,33,176,0.25)]"
           />
         </FadeIn>
@@ -56,9 +67,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ language, onContactC
       <div className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] z-10">
         <FadeIn delay={0.3} x={80} y={0} duration={0.9} className="pointer-events-none">
           <img
-            src="/src/assets/images/server_module_1781065116543.png"
+            src={serverImg}
             alt="Blade Server Module Node 3D"
             referrerPolicy="no-referrer"
+            onError={handleImageError}
             className="w-[130px] sm:w-[170px] md:w-[220px] h-auto object-contain drop-shadow-[0_10px_30px_rgba(190,76,0,0.25)] animate-soft-float"
           />
         </FadeIn>
