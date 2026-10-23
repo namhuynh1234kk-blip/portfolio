@@ -146,7 +146,7 @@ export const PROJECTS: ProjectItem[] = [
       VI: "Giải toán",
     },
     col1Image1: "https://i.postimg.cc/0NsmYyJL/image.png",
-    col1Image2: "https://i.postimg.cc/TYKrGS6z/image.png",
+    col1Image2: "https://i.postimg.cc/ZqxNmHYM/Screenshot-2026-10-23-144024.png",
     col2Image: "https://i.postimg.cc/QdPYh5w9/image.png",
     link: "https://m-y-t-nh-fx-580-vn-x-simulator-scan-ai-1021144332335.us-west1.run.app/",
   },
